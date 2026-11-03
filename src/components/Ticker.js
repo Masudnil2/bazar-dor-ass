@@ -5,7 +5,7 @@ import { changeText, getChange, priceText, unitShort } from "@/lib/utils";
 export default function Ticker() {
   const { products } = useProducts();
   if (!products?.length) return <div className="h-9 bg-gray-900" />;
-  const items = [...products, ...products]; // দুইবার, যাতে লুপ মসৃণ হয়
+  const items = [...products, ...products]; 
   return (
     <div className="bg-gray-900 text-white overflow-hidden h-9 flex items-center">
       <div className="marquee flex gap-8 text-sm whitespace-nowrap">
