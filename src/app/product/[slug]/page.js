@@ -67,7 +67,7 @@ export default function ProductPage() {
       <div>
         <h1 className="text-3xl font-bold">{p.image} {p.nameBn}</h1>
         <p className="text-gray-600 mt-2">
-          আজকের গড় দাম {priceText(p.today)} ({unitBn(p.unit)}), গতকালের তুলনায{" "}
+          আজকের গড় দাম {priceText(p.today)} ({unitBn(p.unit)}), গতকালের তুলনায়{" "}
           <span className={color}>{changeText(p)}</span>।
         </p>
         <div className="flex flex-wrap gap-2 mt-3">
